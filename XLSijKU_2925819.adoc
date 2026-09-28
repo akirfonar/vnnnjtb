@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+MAP.gismdg.asia/blog/928483357.Shtml +
+MAP.gismdg.asia/blog/858669819.Shtml +
+MAP.gismdg.asia/blog/292481920.Shtml +
+MAP.gismdg.asia/blog/397081925.Shtml +
+MAP.gismdg.asia/blog/182642137.Shtml +
+MAP.gismdg.asia/blog/711168286.Shtml +
+MAP.gismdg.asia/blog/006634906.Shtml +
+MAP.gismdg.asia/blog/968797081.Shtml +
+MAP.gismdg.asia/blog/525368874.Shtml +
+MAP.gismdg.asia/blog/858092093.Shtml +
+MAP.gismdg.asia/blog/188658769.Shtml +
+MAP.gismdg.asia/blog/858647248.Shtml +
+MAP.gismdg.asia/blog/963366002.Shtml +
+MAP.gismdg.asia/blog/395230652.Shtml +
+MAP.gismdg.asia/blog/625310869.Shtml +
+MAP.gismdg.asia/blog/969727553.Shtml +
+MAP.gismdg.asia/blog/839628289.Shtml +
+MAP.gismdg.asia/blog/527980582.Shtml +
+MAP.gismdg.asia/blog/340241496.Shtml +
+MAP.gismdg.asia/blog/687536570.Shtml +
+MAP.gismdg.asia/blog/296420319.Shtml +
+MAP.gismdg.asia/blog/071920865.Shtml +
+MAP.gismdg.asia/blog/747930825.Shtml +
+MAP.gismdg.asia/blog/308141647.Shtml +
+MAP.gismdg.asia/blog/292531031.Shtml +
+MAP.gismdg.asia/blog/525370816.Shtml +
+MAP.gismdg.asia/blog/631692036.Shtml +
+MAP.gismdg.asia/blog/418203197.Shtml +
+MAP.gismdg.asia/blog/525868753.Shtml +
+MAP.gismdg.asia/blog/078067864.Shtml +
+MAP.gismdg.asia/blog/236926429.Shtml +
+MAP.gismdg.asia/blog/825314258.Shtml +
+MAP.gismdg.asia/blog/171034703.Shtml +
+MAP.gismdg.asia/blog/521476500.Shtml +
+MAP.gismdg.asia/blog/914221931.Shtml +
+MAP.gismdg.asia/blog/305714708.Shtml +
+MAP.gismdg.asia/blog/181081974.Shtml +
+MAP.gismdg.asia/blog/186425825.Shtml +
+MAP.gismdg.asia/blog/415864216.Shtml +
+MAP.gismdg.asia/blog/963861970.Shtml +
+MAP.gismdg.asia/blog/136058643.Shtml +
+MAP.gismdg.asia/blog/469057269.Shtml +
+MAP.gismdg.asia/blog/930612402.Shtml +
+MAP.gismdg.asia/blog/525992036.Shtml +
+MAP.gismdg.asia/blog/744659920.Shtml +
+MAP.gismdg.asia/blog/162977418.Shtml +
+MAP.gismdg.asia/blog/632063819.Shtml +
+MAP.gismdg.asia/blog/036809218.Shtml +
+MAP.gismdg.asia/blog/262974243.Shtml +
+MAP.gismdg.asia/blog/119498711.Shtml +
+MAP.gismdg.asia/blog/923782356.Shtml +
+MAP.gismdg.asia/blog/024218258.Shtml +
+MAP.gismdg.asia/blog/853319759.Shtml +
+MAP.gismdg.asia/blog/636470508.Shtml +
+MAP.gismdg.asia/blog/664776013.Shtml +
+MAP.gismdg.asia/blog/071370364.Shtml +
+MAP.gismdg.asia/blog/303869754.Shtml +
+MAP.gismdg.asia/blog/631972086.Shtml +
+MAP.gismdg.asia/blog/416192136.Shtml +
+MAP.gismdg.asia/blog/793864708.Shtml +
+MAP.gismdg.asia/blog/307642058.Shtml +
+MAP.gismdg.asia/blog/180336436.Shtml +
+MAP.gismdg.asia/blog/147083205.Shtml +
+MAP.gismdg.asia/blog/736208143.Shtml +
+MAP.gismdg.asia/blog/858142208.Shtml +
+MAP.gismdg.asia/blog/525754697.Shtml +
+MAP.gismdg.asia/blog/808720819.Shtml +
+MAP.gismdg.asia/blog/688229768.Shtml +
+MAP.gismdg.asia/blog/529318250.Shtml +
+MAP.gismdg.asia/blog/825316469.Shtml +
+MAP.gismdg.asia/blog/185319214.Shtml +
+MAP.gismdg.asia/blog/529864792.Shtml +
+MAP.gismdg.asia/blog/292081910.Shtml +
+MAP.gismdg.asia/blog/070814914.Shtml +
+MAP.gismdg.asia/blog/265574090.Shtml +
+MAP.gismdg.asia/blog/692531980.Shtml +
+MAP.gismdg.asia/blog/297553603.Shtml +
+MAP.gismdg.asia/blog/363757681.Shtml +
+MAP.gismdg.asia/blog/529758610.Shtml +
+MAP.gismdg.asia/blog/996730273.Shtml +
+MAP.gismdg.asia/blog/932081536.Shtml +
+MAP.gismdg.asia/blog/418697546.Shtml +
+MAP.gismdg.asia/blog/513102031.Shtml +
+MAP.gismdg.asia/blog/329864764.Shtml +
+MAP.gismdg.asia/blog/418752258.Shtml +
+MAP.gismdg.asia/blog/354203197.Shtml +
+MAP.gismdg.asia/blog/303597187.Shtml +
+MAP.gismdg.asia/blog/740416834.Shtml +
+MAP.gismdg.asia/blog/958142031.Shtml +
+MAP.gismdg.asia/blog/731047035.Shtml +
+MAP.gismdg.asia/blog/829758708.Shtml +
+MAP.gismdg.asia/blog/292086546.Shtml +
+MAP.gismdg.asia/blog/296435369.Shtml +
+MAP.gismdg.asia/blog/636081910.Shtml +
+MAP.gismdg.asia/blog/413602725.Shtml +
+MAP.gismdg.asia/blog/304257030.Shtml +
+MAP.gismdg.asia/blog/418653503.Shtml +
+MAP.gismdg.asia/blog/636530319.Shtml +
+MAP.gismdg.asia/blog/463320924.Shtml +
+MAP.gismdg.asia/blog/070863242.Shtml +
+MAP.gismdg.asia/blog/410485369.Shtml +
+MAP.gismdg.asia/blog/214708692.Shtml +
+MAP.gismdg.asia/blog/476151559.Shtml +
+MAP.gismdg.asia/blog/858697258.Shtml +
+MAP.gismdg.asia/blog/792031143.Shtml +
+MAP.gismdg.asia/blog/031912534.Shtml +
+MAP.gismdg.asia/blog/070816058.Shtml +
+MAP.gismdg.asia/blog/603142075.Shtml +
+MAP.gismdg.asia/blog/060942086.Shtml +
+MAP.gismdg.asia/blog/291108697.Shtml +
+MAP.gismdg.asia/blog/735752965.Shtml +
+MAP.gismdg.asia/blog/631931965.Shtml +
+MAP.gismdg.asia/blog/636420869.Shtml +
+MAP.gismdg.asia/blog/818107535.Shtml +
+MAP.gismdg.asia/blog/221357897.Shtml +
+MAP.gismdg.asia/blog/524718642.Shtml +
+MAP.gismdg.asia/blog/307041927.Shtml +
+MAP.gismdg.asia/blog/964203147.Shtml +
+MAP.gismdg.asia/blog/526970354.Shtml +
+MAP.gismdg.asia/blog/181420814.Shtml +
+MAP.gismdg.asia/blog/520863207.Shtml +
+MAP.gismdg.asia/blog/181088607.Shtml +
+MAP.gismdg.asia/blog/520319910.Shtml +
+MAP.gismdg.asia/blog/085886970.Shtml +
+MAP.gismdg.asia/blog/458649608.Shtml +
+MAP.gismdg.asia/blog/795025256.Shtml +
+MAP.gismdg.asia/blog/074700869.Shtml +
+MAP.gismdg.asia/blog/297536429.Shtml +
+MAP.gismdg.asia/blog/541915708.Shtml +
+MAP.gismdg.asia/blog/526420854.Shtml +
+MAP.gismdg.asia/blog/288169742.Shtml +
+MAP.gismdg.asia/blog/185319765.Shtml +
+MAP.gismdg.asia/blog/686429353.Shtml +
+MAP.gismdg.asia/blog/525375376.Shtml +
+MAP.gismdg.asia/blog/392581520.Shtml +
+MAP.gismdg.asia/blog/963754257.Shtml +
+MAP.gismdg.asia/blog/858316375.Shtml +
+MAP.gismdg.asia/blog/303532581.Shtml +
+MAP.gismdg.asia/blog/182087536.Shtml +
+MAP.gismdg.asia/blog/314203364.Shtml +
+MAP.gismdg.asia/blog/525925102.Shtml +
+MAP.gismdg.asia/blog/185870869.Shtml +
+MAP.gismdg.asia/blog/057112907.Shtml +
+MAP.gismdg.asia/blog/080639026.Shtml +
+MAP.gismdg.asia/blog/747936421.Shtml +
+MAP.gismdg.asia/blog/529319870.Shtml +
+MAP.gismdg.asia/blog/586086992.Shtml +
+MAP.gismdg.asia/blog/181975803.Shtml +
+MAP.gismdg.asia/blog/290624599.Shtml +
+MAP.gismdg.asia/blog/188269258.Shtml +
+MAP.gismdg.asia/blog/170431979.Shtml +
+MAP.gismdg.asia/blog/241080330.Shtml +
+MAP.gismdg.asia/blog/914314297.Shtml +
+MAP.gismdg.asia/blog/575314708.Shtml +
+MAP.gismdg.asia/blog/663528591.Shtml +
+MAP.gismdg.asia/blog/308869747.Shtml +
+MAP.gismdg.asia/blog/118278524.Shtml +
+MAP.gismdg.asia/blog/742697036.Shtml +
+MAP.gismdg.asia/blog/789167806.Shtml +
+MAP.gismdg.asia/blog/308642148.Shtml +
+MAP.gismdg.asia/blog/602108192.Shtml +
+MAP.gismdg.asia/blog/581973758.Shtml +
+MAP.gismdg.asia/blog/561807856.Shtml +
+MAP.gismdg.asia/blog/304604208.Shtml +
+MAP.gismdg.asia/blog/848658642.Shtml +
+MAP.gismdg.asia/blog/747036420.Shtml +
+MAP.gismdg.asia/blog/853194220.Shtml +
+MAP.gismdg.asia/blog/865420820.Shtml +
+MAP.gismdg.asia/blog/070861475.Shtml +
+MAP.gismdg.asia/blog/970370864.Shtml +
+MAP.gismdg.asia/blog/292508597.Shtml +
+MAP.gismdg.asia/blog/844757144.Shtml +
+MAP.gismdg.asia/blog/292083147.Shtml +
+MAP.gismdg.asia/blog/632081965.Shtml +
+MAP.gismdg.asia/blog/291930843.Shtml +
+MAP.gismdg.asia/blog/308663247.Shtml +
+MAP.gismdg.asia/blog/041986425.Shtml +
+MAP.gismdg.asia/blog/070819703.Shtml +
+MAP.gismdg.asia/blog/842081965.Shtml +
+MAP.gismdg.asia/blog/024755324.Shtml +
+MAP.gismdg.asia/blog/072586470.Shtml +
+MAP.gismdg.asia/blog/991427581.Shtml +
+MAP.gismdg.asia/blog/417536470.Shtml +
+MAP.gismdg.asia/blog/064703642.Shtml +
+MAP.gismdg.asia/blog/757003642.Shtml +
+MAP.gismdg.asia/blog/518757070.Shtml +
+MAP.gismdg.asia/blog/235808180.Shtml +
+MAP.gismdg.asia/blog/636929803.Shtml +
+MAP.gismdg.asia/blog/181911475.Shtml +
+MAP.gismdg.asia/blog/347031503.Shtml +
+MAP.gismdg.asia/blog/747083109.Shtml +
+MAP.gismdg.asia/blog/291559308.Shtml +
+MAP.gismdg.asia/blog/303118314.Shtml +
+MAP.gismdg.asia/blog/529781970.Shtml +
+MAP.gismdg.asia/blog/397536475.Shtml +
+MAP.gismdg.asia/blog/332767134.Shtml +
+MAP.gismdg.asia/blog/747752585.Shtml +
+MAP.gismdg.asia/blog/353192057.Shtml +
+MAP.gismdg.asia/blog/065314208.Shtml +
+MAP.gismdg.asia/blog/181920547.Shtml +
+MAP.gismdg.asia/blog/514382581.Shtml +
+MAP.gismdg.asia/blog/202592046.Shtml +
+MAP.gismdg.asia/blog/768258692.Shtml +
+MAP.gismdg.asia/blog/185320814.Shtml +
+MAP.gismdg.asia/blog/081920779.Shtml +
+MAP.gismdg.asia/blog/069863258.Shtml +
+MAP.gismdg.asia/blog/414208703.Shtml +
+MAP.gismdg.asia/blog/292532753.Shtml +
+MAP.gismdg.asia/blog/429203603.Shtml +
+MAP.gismdg.asia/blog/636486520.Shtml +
+MAP.gismdg.asia/blog/499690667.Shtml +
+MAP.gismdg.asia/blog/070869703.Shtml +
+MAP.gismdg.asia/blog/063989402.Shtml +
+MAP.gismdg.asia/blog/809259581.Shtml +
+MAP.gismdg.asia/blog/525818753.Shtml +
+MAP.gismdg.asia/blog/070219752.Shtml +
+MAP.gismdg.asia/blog/742253193.Shtml +
+MAP.gismdg.asia/blog/747709316.Shtml +
+MAP.gismdg.asia/blog/025319803.Shtml +
+MAP.gismdg.asia/blog/747547546.Shtml +
+MAP.gismdg.asia/blog/781081975.Shtml +
+MAP.gismdg.asia/blog/300869914.Shtml +
+MAP.gismdg.asia/blog/576558303.Shtml +
+MAP.gismdg.asia/blog/202592032.Shtml +
+MAP.gismdg.asia/blog/515316925.Shtml +
+MAP.gismdg.asia/blog/927553200.Shtml +
+MAP.gismdg.asia/blog/202143259.Shtml +
+MAP.gismdg.asia/blog/020322032.Shtml +
+MAP.gismdg.asia/blog/086656486.Shtml +
+MAP.gismdg.asia/blog/026208437.Shtml +
+MAP.gismdg.asia/blog/744851239.Shtml +
+MAP.gismdg.asia/blog/686043354.Shtml +
+MAP.gismdg.asia/blog/074258208.Shtml +
+MAP.gismdg.asia/blog/626017774.Shtml +
+MAP.gismdg.asia/blog/576992815.Shtml +
+MAP.gismdg.asia/blog/042198709.Shtml +
+MAP.gismdg.asia/blog/247704214.Shtml +
+MAP.gismdg.asia/blog/681592558.Shtml +
+MAP.gismdg.asia/blog/960921958.Shtml +
+MAP.gismdg.asia/blog/244225971.Shtml +
+MAP.gismdg.asia/blog/353436536.Shtml +
+MAP.gismdg.asia/blog/420331198.Shtml +
+MAP.gismdg.asia/blog/293769269.Shtml +
+MAP.gismdg.asia/blog/547092858.Shtml +
+MAP.gismdg.asia/blog/298881037.Shtml +
+MAP.gismdg.asia/blog/136049315.Shtml +
+MAP.gismdg.asia/blog/803376587.Shtml +
+MAP.gismdg.asia/blog/242759710.Shtml +
+MAP.gismdg.asia/blog/353714314.Shtml +
+MAP.gismdg.asia/blog/815836934.Shtml +
+MAP.gismdg.asia/blog/128039462.Shtml +
+MAP.gismdg.asia/blog/981921932.Shtml +
+MAP.gismdg.asia/blog/398233759.Shtml +
+MAP.gismdg.asia/blog/520999711.Shtml +
+MAP.gismdg.asia/blog/193150997.Shtml +
+MAP.gismdg.asia/blog/081088754.Shtml +
+MAP.gismdg.asia/blog/136047643.Shtml +
+MAP.gismdg.asia/blog/681431032.Shtml +
+MAP.gismdg.asia/blog/070531436.Shtml +
+MAP.gismdg.asia/blog/910370437.Shtml +
+MAP.gismdg.asia/blog/021603259.Shtml +
+MAP.gismdg.asia/blog/253391532.Shtml +
+MAP.gismdg.asia/blog/964831971.Shtml +
+MAP.gismdg.asia/blog/875453704.Shtml +
+MAP.gismdg.asia/blog/688260921.Shtml +
+MAP.gismdg.asia/blog/291477658.Shtml +
+MAP.gismdg.asia/blog/755058654.Shtml +
+MAP.gismdg.asia/blog/370426537.Shtml +
+MAP.gismdg.asia/blog/351393780.Shtml +
+MAP.gismdg.asia/blog/712223944.Shtml +
+MAP.gismdg.asia/blog/223332765.Shtml +
+MAP.gismdg.asia/blog/201272272.Shtml +
+MAP.gismdg.asia/blog/937245484.Shtml +
+MAP.gismdg.asia/blog/781585817.Shtml +
+MAP.gismdg.asia/blog/681693881.Shtml +
+MAP.gismdg.asia/blog/703604361.Shtml +
+MAP.gismdg.asia/blog/353614369.Shtml +
+MAP.gismdg.asia/blog/925860425.Shtml +
+MAP.gismdg.asia/blog/092531091.Shtml +
+MAP.gismdg.asia/blog/804203197.Shtml +
+MAP.gismdg.asia/blog/419275768.Shtml +
+MAP.gismdg.asia/blog/080180628.Shtml +
+MAP.gismdg.asia/blog/969713306.Shtml +
+MAP.gismdg.asia/blog/322233872.Shtml +
+MAP.gismdg.asia/blog/600388306.Shtml +
+MAP.gismdg.asia/blog/926000956.Shtml +
+MAP.gismdg.asia/blog/650058777.Shtml +
+MAP.gismdg.asia/blog/080228415.Shtml +
+MAP.gismdg.asia/blog/491611599.Shtml +
+MAP.gismdg.asia/blog/652214556.Shtml +
+MAP.gismdg.asia/blog/500739358.Shtml +
+MAP.gismdg.asia/blog/266537690.Shtml +
+MAP.gismdg.asia/blog/087543269.Shtml +
+MAP.gismdg.asia/blog/975821698.Shtml +
+MAP.gismdg.asia/blog/421997326.Shtml +
+MAP.gismdg.asia/blog/070216580.Shtml +
+MAP.gismdg.asia/blog/416420879.Shtml +
+MAP.gismdg.asia/blog/964225091.Shtml +
+MAP.gismdg.asia/blog/737046531.Shtml +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日03时25分16秒
